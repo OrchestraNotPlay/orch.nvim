@@ -4,3 +4,7 @@ vim.api.nvim_create_autocmd('FileType', {
   pattern = { '<filetype>' },
   callback = function() vim.treesitter.start() end,
 })
+
+require('mini.pairs').setup()
+
+vim.lsp.enable('clangd')
