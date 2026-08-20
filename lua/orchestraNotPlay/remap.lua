@@ -10,6 +10,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+vim.keymap.set('n', '<C-n>', vim.cmd.bprev)
+vim.keymap.set('n', '<C-m>', vim.cmd.bnext)
+vim.keymap.set('n', '<leader>bd', vim.cmd.bd)
+
 vim.keymap.set("i", "<C-s>", function()
     vim.lsp.buf.format()
     vim.cmd.w()

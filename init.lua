@@ -6,6 +6,7 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 require('mini.pairs').setup()
+require('mini.tabline').setup()
 require('mini.surround').setup()
 require('rose-pine').setup({
   styles = {
