@@ -20,3 +20,8 @@ vim.keymap.set("i", "<C-s>", function()
     vim.cmd.stopinsert()
     end
 )
+vim.keymap.set("n", "<C-s>", function()
+    vim.lsp.buf.format()
+    vim.cmd.w()
+    end
+)
