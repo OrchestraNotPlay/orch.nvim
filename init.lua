@@ -52,6 +52,8 @@ vim.keymap.set("n", "<C-s>", function()
 	vim.cmd.w()
 end)
 
+vim.keymap.set("n", "<leader>g", "<cmd>LazyGit<CR>")
+
 -- VIMPACK --
 local gh = function(x)
 	return "https://github.com/" .. x
@@ -70,6 +72,7 @@ vim.pack.add({
 	gh("windwp/nvim-autopairs"),
 	gh("nvim-tree/nvim-web-devicons"),
 	gh("akinsho/bufferline.nvim"),
+	gh("kdheepak/lazygit.nvim"),
 })
 
 -- PLUGIN SETUP --
