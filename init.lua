@@ -42,7 +42,7 @@ vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 vim.keymap.set("n", "<C-n>", vim.cmd.bprev)
 vim.keymap.set("n", "<C-m>", vim.cmd.bnext)
-vim.keymap.set("n", "<C-M-b>", vim.cmd.bd)
+vim.keymap.set("n", "<leader>db", vim.cmd.bd)
 
 vim.keymap.set("i", "<C-s>", function()
 	vim.cmd.w()
